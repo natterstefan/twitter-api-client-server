@@ -5,14 +5,12 @@ FROM $node_image
 
 WORKDIR /app
 
-# configs and dependency handling
+# configs and dependencies files
 COPY package.json yarn.lock ./
+COPY tsconfig.json ./
 
 # install all dependencies
 RUN yarn install --frozen-lockfile --no-progress
-
-# copy build files
-COPY tsconfig.json ./
 
 # source code of the app
 COPY src/ ./src

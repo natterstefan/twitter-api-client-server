@@ -1,7 +1,7 @@
 {
   "name": "nodejs-twitter-api-server-example",
   "version": "0.0.1",
-  "description": "",
+  "description": "NodeJS server that uses FeedHive/twitter-api-client to interact with the Twitter API.",
   "author": "Stefan Natter (https://natterstefan.me)",
   "license": "Apache-2.0",
   "private": "true",
@@ -12,11 +12,11 @@
     "lint": "yarn eslint . --cache",
     "prestart": "rimraf dist && yarn build",
     "serve": "node dist/index.js",
-    "start": "npm run serve",
+    "start": "yarn serve",
     "test": "jest",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
-    "watch": "concurrently -k -p \"[{name}]\" \"npm run watch-ts\" \"npm run watch-node\""
+    "watch": "concurrently -k -p \"[{name}]\" \"yarn watch-ts\" \"yarn watch-node\""
   },
   "dependencies": {
     "body-parser": "^1.19.0",

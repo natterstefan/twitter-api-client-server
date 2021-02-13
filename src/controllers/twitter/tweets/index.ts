@@ -1,4 +1,4 @@
-import { Response, Request } from 'express'
+import { Response, Request, NextFunction } from 'express'
 
 /**
  * Provides a simple, relevance-based search interface to public user accounts
@@ -9,9 +9,17 @@ import { Response, Request } from 'express'
  *
  * @example http://localhost:3000/api/tweets/statusesUserTimeline/natterstefan
  */
-export const statusesUserTimeline = async (req: Request, res: Response) => {
-  const data = await res.locals.twitterClient.tweets.statusesUserTimeline({
-    screen_name: req.params.screenName,
-  })
-  res.json(data)
+export const statusesUserTimeline = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const data = await res.locals.twitterClient.tweets.statusesUserTimeline({
+      screen_name: req.params.screenName,
+    })
+    res.json(data)
+  } catch (err) {
+    next(err)
+  }
 }

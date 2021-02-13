@@ -5,6 +5,8 @@ import cors from 'cors'
 // Controllers (route handlers)
 import * as homeController from './controllers/home'
 import * as apiController from './controllers/api'
+// Middlewares
+import { errorHandler } from './middlewares/errorMiddleware'
 // Utils
 import { twitterClient } from './utils/twitterClient'
 
@@ -45,5 +47,8 @@ app.get(
   '/api/tweets/statusesUserTimeline/:screenName',
   apiController.statusesUserTimeline,
 )
+
+// catch all errors
+app.use(errorHandler)
 
 export default app
