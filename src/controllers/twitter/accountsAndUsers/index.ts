@@ -5,7 +5,7 @@ import { Response, Request } from 'express'
  * on Twitter.
  *
  * @docs https://github.com/FeedHive/twitter-api-client/blob/master/REFERENCES.md#accountsandusers
- * @route GET /api/accounts-and-user/users-search/:username
+ * @route GET /api/accountsAndUsers/usersSearch/:username
  *
  * @example http://localhost:3000/api/accounts-and-user/users-search/natterstefan
  */

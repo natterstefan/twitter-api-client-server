@@ -38,8 +38,12 @@ app.get('/', homeController.index)
  * API examples routes.
  */
 app.get(
-  '/api/twitter/accounts-and-user/users-search/:username',
+  '/api/accountsAndUsers/usersSearch/:username',
   apiController.usersSearch,
+)
+app.get(
+  '/api/tweets/statusesUserTimeline/:screenName',
+  apiController.statusesUserTimeline,
 )
 
 export default app

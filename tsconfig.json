@@ -13,6 +13,7 @@
     "paths": {
       "@/*": ["src/*", "*"],
     },
+    "skipLibCheck": true
   },
   "include": ["src/**/*"] ,
   "exclude": ["dist", "node_modules"]
