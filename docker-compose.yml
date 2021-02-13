@@ -8,6 +8,17 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+
+    # When you set the same environment variable in multiple files,
+    # here’s the priority used by Compose to choose which value to use:
+
+    # Compose file
+    # Shell environment variables
+    # Environment file
+    # Dockerfile
+    # Variable is not defined
+    #
+    # @see https://docs.docker.com/compose/environment-variables/#the-env-file
     environment:
       - API_KEY=${API_KEY}
       - API_SECRET=${API_SECRET}
