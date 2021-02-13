@@ -1,4 +1,4 @@
-# NodeJS Playground
+# nodejs-twitter-api-server-example
 
 ## Getting Started
 

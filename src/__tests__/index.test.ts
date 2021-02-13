@@ -1,8 +1,10 @@
-/**
- * Example test to see if Jest works :)
- */
-describe('Example test', () => {
-  it('should return 1', () => {
-    expect(1).toStrictEqual(1)
+import request from 'supertest'
+
+import app from '../server'
+
+describe('GET /', () => {
+  // eslint-disable-next-line jest/no-done-callback
+  it('should return 200 OK', done => {
+    request(app).get('/').expect(200, done)
   })
 })

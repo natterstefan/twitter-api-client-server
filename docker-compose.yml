@@ -1,10 +1,15 @@
-version: "3.6"
+version: "3.8"
 
 services:
   app:
-    image: natterstefan/nodejs-playground:0.0.1
+    image: natterstefan/nodejs-twitter-api-server-example:0.0.1
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    environment:
+      - API_KEY=${API_KEY}
+      - API_SECRET=${API_SECRET}
+      - ACCESS_TOKEN=${ACCESS_TOKEN}
+      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}

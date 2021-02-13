@@ -5,6 +5,8 @@
   },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
+  "eslint.validate": ["javascript", "typescript"],
   "files.eol": "\n",
+  "typescript.referencesCodeLens.enabled": true,
   "typescript.tsdk": "./node_modules/typescript/lib"
 }
