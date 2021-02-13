@@ -37,6 +37,10 @@ module.exports = {
     {
       files: ['*.test.ts', '*.test.tsx', '*.stories.ts', '*.stories.tsx'],
       rules: {
+        // disable because we use supertest
+        'jest/no-done-callback': 0,
+        // disable because we use supertest
+        'jest/expect-expect': 0,
         'import/no-extraneous-dependencies': 0,
         '@typescript-eslint/no-non-null-assertion': 0,
       },
