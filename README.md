@@ -5,8 +5,33 @@
 [![GitHub license](https://img.shields.io/github/license/natterstefan/nodejs-twitter-api-server-example)](https://github.com/natterstefan/nodejs-twitter-api-server-example/blob/main/LICENSE)
 [![nodejs](https://img.shields.io/badge/nodejs-built%20with%20typescript-informational.svg?logo=typescript&logoWidth=20)](https://github.com/natterstefan/nodejs-twitter-api-server-example)
 
+![NodeJS Server Example for FeedHive/twitter-api-client](./assets/github.png)
+
 NodeJS server that uses [FeedHive/twitter-api-client](https://github.com/FeedHive/twitter-api-client)
 to interact with the Twitter API.
+
+## Table of content
+
+- [Features](#features)
+- [**Requirements**](#requirements)
+- [**Getting Started**](#getting-started)
+- [Docker](#docker)
+- [Help](#help)
+- [Contribute](#contribute)
+- [License](#license)
+
+---
+
+## Features
+
+- NodeJS server with watch mode support (thanks to [nodemon](https://www.npmjs.com/package/nodemon))
+- Two example routes using the Twitter API client
+- Full [Docker](https://www.docker.com/) support
+- [ESLint](https://github.com/eslint/eslint) and [prettier](https://github.com/prettier/prettier)
+  setup
+- [Jest](https://www.npmjs.com/package/jest) & [supertest](https://www.npmjs.com/package/supertest) setup for tests
+- **Fully typed!**
+- with GitHub Action Continuous integration workflow
 
 ## Requirements
 
@@ -65,6 +90,11 @@ docker-compose build
 - Reach out on [Twitter](https://twitter.com/natterstefan)
 - Open an [issue on GitHub](https://github.com/natterstefan/nodejs-twitter-api-server-example/issues/new)
 
+### Troubleshooting
+
+- The app does not start? Make sure you run `yarn build` before the very first
+  time you start the app.
+
 ## Contribute
 
 ### Issues
@@ -74,11 +104,6 @@ In the case of a bug report, bugfix or a suggestions, please feel very free to o
 ### Pull request
 
 Pull requests are always welcome!
-
-## Troubleshooting
-
-- The app does not start? Make sure you run `yarn build` before the very first
-  time you start the app.
 
 ## Misc
 
