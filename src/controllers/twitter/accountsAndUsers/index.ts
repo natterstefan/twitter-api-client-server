@@ -1,0 +1,17 @@
+import { Response, Request } from 'express'
+
+/**
+ * Provides a simple, relevance-based search interface to public user accounts
+ * on Twitter.
+ *
+ * @docs https://github.com/FeedHive/twitter-api-client/blob/master/REFERENCES.md#accountsandusers
+ * @route GET /api/accounts-and-user/users-search/:username
+ *
+ * @example http://localhost:3000/api/accounts-and-user/users-search/natterstefan
+ */
+export const usersSearch = async (req: Request, res: Response) => {
+  const data = await res.locals.twitterClient.accountsAndUsers.usersSearch({
+    q: req.params.username,
+  })
+  res.json(data)
+}
