@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "pflannery.vscode-versionlens",
+    "ziyasal.vscode-open-in-github"
+  ]
+}

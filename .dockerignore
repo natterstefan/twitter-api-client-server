@@ -1,0 +1,5 @@
+.git
+.vscode
+.all-contributorsrc
+node_modules
+prettier.config.js
