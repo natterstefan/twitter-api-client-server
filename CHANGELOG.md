@@ -1,4 +1,4 @@
-# nodejs-twitter-api-server-example
+# twitter-api-client-server
 
 All notable changes to this project will be documented here. The format is based
 on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project

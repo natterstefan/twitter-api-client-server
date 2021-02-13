@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    image: natterstefan/nodejs-twitter-api-server-example:0.0.1
+    image: natterstefan/twitter-api-client-server:0.0.1
     build:
       context: .
       dockerfile: Dockerfile

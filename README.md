@@ -1,9 +1,9 @@
-# nodejs-twitter-api-server-example
+# twitter-api-client-server
 
-[![GitHub issues](https://img.shields.io/github/issues/natterstefan/nodejs-twitter-api-server-example)](https://github.com/natterstefan/nodejs-twitter-api-server-example/issues)
-[![GitHub stars](https://img.shields.io/github/stars/natterstefan/nodejs-twitter-api-server-example)](https://github.com/natterstefan/nodejs-twitter-api-server-example/stargazers)
-[![GitHub license](https://img.shields.io/github/license/natterstefan/nodejs-twitter-api-server-example)](https://github.com/natterstefan/nodejs-twitter-api-server-example/blob/main/LICENSE)
-[![nodejs](https://img.shields.io/badge/nodejs-built%20with%20typescript-informational.svg?logo=typescript&logoWidth=20)](https://github.com/natterstefan/nodejs-twitter-api-server-example)
+[![GitHub issues](https://img.shields.io/github/issues/natterstefan/twitter-api-client-server)](https://github.com/natterstefan/twitter-api-client-server/issues)
+[![GitHub stars](https://img.shields.io/github/stars/natterstefan/twitter-api-client-server)](https://github.com/natterstefan/twitter-api-client-server/stargazers)
+[![GitHub license](https://img.shields.io/github/license/natterstefan/twitter-api-client-server)](https://github.com/natterstefan/twitter-api-client-server/blob/main/LICENSE)
+[![nodejs](https://img.shields.io/badge/nodejs-built%20with%20typescript-informational.svg?logo=typescript&logoWidth=20)](https://github.com/natterstefan/twitter-api-client-server)
 
 ![NodeJS Server Example for FeedHive/twitter-api-client](./assets/github.png)
 
@@ -88,7 +88,7 @@ docker-compose build
 ## Help
 
 - Reach out on [Twitter](https://twitter.com/natterstefan)
-- Open an [issue on GitHub](https://github.com/natterstefan/nodejs-twitter-api-server-example/issues/new)
+- Open an [issue on GitHub](https://github.com/natterstefan/twitter-api-client-server/issues/new)
 
 ### Troubleshooting
 

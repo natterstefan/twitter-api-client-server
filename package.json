@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-twitter-api-server-example",
+  "name": "twitter-api-client-server",
   "version": "0.0.1",
   "description": "NodeJS server that uses FeedHive/twitter-api-client to interact with the Twitter API.",
   "author": "Stefan Natter (https://natterstefan.me)",
